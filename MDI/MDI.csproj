@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F8CDDDC-6AE1-4313-A07B-84CDCE1FC491}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MDI</RootNamespace>
+    <AssemblyName>MDI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BT_BongDen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_BongDen.Designer.cs">
+      <DependentUpon>BT_BongDen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_CheckedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_CheckedList.designer.cs">
+      <DependentUpon>BT_CheckedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_DKLaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_DKLaiXe.designer.cs">
+      <DependentUpon>BT_DKLaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_ListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_ListBox.designer.cs">
+      <DependentUpon>BT_ListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BT_Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BT_Editor.designer.cs">
+      <DependentUpon>BT_Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridView.Designer.cs">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BT_BongDen.resx">
+      <DependentUpon>BT_BongDen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_CheckedList.resx">
+      <DependentUpon>BT_CheckedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_DKLaiXe.resx">
+      <DependentUpon>BT_DKLaiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_ListBox.resx">
+      <DependentUpon>BT_ListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BT_Editor.resx">
+      <DependentUpon>BT_Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridView.resx">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Light_Bulb_or_Idea_Flat_Icon_Vector.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3758873795313_d3a426d5204bbfa17075efb7c6f46f3e.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
